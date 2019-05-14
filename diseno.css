@@ -1,0 +1,34 @@
+.modelo{
+    background: linear-gradient(to right,rgb(97, 97, 97),rgb(51, 51, 51))
+}
+td input{
+    
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    margin: 2;
+    background: linear-gradient(to left,rgb(209, 206, 179), rgb(157, 172, 184) )
+}
+    
+.boton_cero {
+   width: 100%;
+   height: 50;
+   cursor: pointer;
+   
+}
+
+.boton_igual {
+    height: 145px;   
+    cursor: pointer;
+ }
+
+.pantalla{
+    display: block;
+    width: 24.5%;
+    height: 40px;
+    font-size: 25px;
+    margin: 2;
+    padding: 2px;
+    background-color: rgb(185, 185, 185);
+}
+
