@@ -29,6 +29,6 @@ td input{
     font-size: 25px;
     margin: 2;
     padding: 2px;
-    background-color: rgb(185, 185, 185);
+    background-color: radial-gradient(to right,rgb(109, 119, 173), rgb(65, 70, 75))
 }
 

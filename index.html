@@ -7,62 +7,63 @@
     <title>Calculadora</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="diseno.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="funcion.js"></script>
+    <script type="text/javascript" src="funcion.js">console.log("Mensaje en la consola")</script>
 </head>
 
 <body>
     <div>
-    <noscript>
-        Your browser doesn't support or has disabled JavaScript
-    </noscript>
-    
-    
-    <table class="modelo">
-        <tr>
-                <form>
-                        <input type="text" id="pantalla" value="0"  class="pantalla"> 
-                
-        </tr>
-            
-        <tr>
-            <td><input type="button" id="borrar" value="&#8592;" onclick="borrar()"></td>
-            <td><input type="button" id="ce" value="CE" onclick="borra()"></td>
-            <td><input type="button" id="c" value="C" onclick="borradoTotal()"></td>
-            <td><input type="button" id="masmenos" value="&#177;" onclick="masmenos()"></td>
-            <td><input type="button" id="raiz" value="&#8730;" onclick="raiz()"></td>
+        <noscript>
+            Your browser doesn't support or has disabled JavaScript
+        </noscript>
+        
 
-        </tr>
-        <tr>
-            <td><input type="button" id="siete" value="7" onclick="numeros(7)"></td>
-            <td><input type="button" id="ocho" value="8" onclick="numeros(8)"></td>
-            <td><input type="button" id="nueve" value="9" onclick="numeros(9)"></td>
-            <td><input type="button" id="division" value="/" onclick="numer()"></td>
-            <td><input type="button" id="porcentaje" value="%" onclick="porcentaje()"></td>
-        </tr>
-        <tr>
-            <td><input type="button" id="cuatro" value="4" onclick="numeros(4)"></td>
-            <td><input type="button" id="cinco" value="5" onclick="numeros(5)"></td>
-            <td><input type="button" id="seis" value="6" onclick="numeros(6)"></td>
-            <td><input type="button" id="multiplicacion" value="*" onclick="operar('*')"></td>
-            <td><input type="button" id="unox" value="1/x" onclick="unox()"></td>
+        <table class="modelo">
+            <tr>
+                <form name="Cal">
+                    
+                    <input type="text" id="pantalla" value="" class="pantalla">
+                </form>
+            </tr>
 
-        </tr>
-        <tr>
-            <td><input type="button" id="uno" value="1" onclick="numeros(1)"></td>
-            <td><input type="button" id="dos" value="2" onclick="numeros(2)"></td>
-            <td><input type="button" id="tres" value="3" onclick="numeros(3)"></td>
-            <td><input type="button" id="menos" value="-" onclick="operar('-')"></td>
-            <td rowspan="5"><input type="button" id="igual" value="=" class="boton_igual" onclick="igual('=')"></td>
+            <tr>
+                <td><input type="button" id="borrar" value="&#8592;" onclick="borrar()"></td>
+                <td><input type="button" id="ce" value="CE" onclick="borra()"></td>
+                <td><input type="button" id="c" value="C" onclick="borradoTotal()"></td>
+                <td><input type="button" id="masmenos" value="&#177;" onclick="masmenos()"></td>
+                <td><input type="button" id="raiz" value="&#8730;" onclick="raiz()"></td>
 
-        </tr>
-        <tr>
-            <td colspan="2"><input type="button" id="cero" value="0" class="boton_cero" onclick="numeros(0)"></td>
-            <td><input type="button" id="coma" value="," onclick="operar(',')"></td>
-            <td rowspan="5"><input type="button" id="mas" value="+" onclick="operar('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="siete" value="7" onclick="numeros(7)"></td>
+                <td><input type="button" id="ocho" value="8" onclick="numeros(8)"></td>
+                <td><input type="button" id="nueve" value="9" onclick="numeros(9)"></td>
+                <td><input type="button" id="division" value="/" onclick="division()"></td>
+                <td><input type="button" id="porcentaje" value="%" onclick="porcentaje()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="cuatro" value="4" onclick="numeros(4)"></td>
+                <td><input type="button" id="cinco" value="5" onclick="numeros(5)"></td>
+                <td><input type="button" id="seis" value="6" onclick="numeros(6)"></td>
+                <td><input type="button" id="multiplicacion" value="*" onclick="multiplicacion()"></td>
+                <td><input type="button" id="unox" value="1/x" onclick="unox()"></td>
 
-        </tr>
-    </table>
-</div>
+            </tr>
+            <tr>
+                <td><input type="button" id="uno" value="1" onclick="numeros(1)"></td>
+                <td><input type="button" id="dos" value="2" onclick="numeros(2)"></td>
+                <td><input type="button" id="tres" value="3" onclick="numeros(3)"></td>
+                <td><input type="button" id="menos" value="-" onclick="resta()"></td>
+                <td rowspan="5"><input type="button" id="igual" value="=" class="boton_igual" onclick="igual()"></td>
+
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" id="cero" value="0" class="boton_cero" onclick="numeros(0)"></td>
+                <td><input type="button" id="coma" value="," onclick="numeros('.')"></td>
+                <td rowspan="5"><input type="button" id="mas" value="+" onclick="suma()"></td>
+
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
